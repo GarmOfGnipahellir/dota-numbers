@@ -9,13 +9,13 @@ Something here.
 
 ```desmos
 {
-    first
+    "expression": "x"
 }
 ```
 
 ```desmos
 {
-    second
+    "expression": "x^2"
 }
 ```
 
