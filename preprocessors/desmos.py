@@ -17,8 +17,8 @@ if __name__ == '__main__':
 
     context, book = json.load(sys.stdin)
 
-    for section in book["sections"]:
-        for chapter in section.values():
-            chapter["content"] = add_desmos(chapter["content"])
+    # for section in book["sections"]:
+    #     for chapter in section.values():
+    #         chapter["content"] = add_desmos(chapter["content"])
 
     print(json.dumps(book))

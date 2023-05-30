@@ -6,4 +6,4 @@ src = "src"
 title = "Dota Numbers"
 
 [preprocessor.desmos]
-command = "python preprocessors/desmos.py"
+command = "python3 preprocessors/desmos.py"
