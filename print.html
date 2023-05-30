@@ -147,15 +147,17 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
-<div id="calculator" style="width: 600px; height: 400px; margin: auto"></div>
+<div id="30e8c9cd-9b6e-46d2-908c-10083a39a48e" style="width: 600px; height: 400px; margin: auto"></div>
 <script>
-  var elt = document.getElementById('calculator');
-  var calculator = Desmos.GraphingCalculator(elt);
+var elt = document.getElementById("30e8c9cd-9b6e-46d2-908c-10083a39a48e");
+var calc = Desmos.GraphingCalculator(elt, {
+expressionsCollapsed: true,
+pasteGraphLink: true,xAxisLabel: "Armor",yAxisLabel: "Damage Factor",
+});
+calc.setExpression({ latex: "x^2" });
+calc.setMathBounds({ left: -40, right: 40, bottom: 0, top: 2 });
+calc.setDefaultState(calc.getState());
 </script>
-<pre><code class="language-desmos">{
-
-}
-</code></pre>
 <p>Something here maybe?</p>
 
                     </main>
