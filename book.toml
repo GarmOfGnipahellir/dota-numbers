@@ -1,0 +1,9 @@
+[book]
+authors = ["Garm"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Dota Numbers"
+
+[preprocessor.desmos]
+command = "python preprocessors/desmos.py"
