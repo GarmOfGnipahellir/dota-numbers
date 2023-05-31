@@ -5,5 +5,8 @@ multilingual = false
 src = "src"
 title = "Dota Numbers"
 
+[output.html]
+mathjax-support = true
+
 [preprocessor.desmos]
 command = "python3 preprocessors/desmos.py"

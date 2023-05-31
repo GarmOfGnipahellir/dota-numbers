@@ -8,7 +8,7 @@ def replace(content: str, s: int, e: int, data: dict) -> str:
     after = content[e:]
 
     id = uuid.uuid4()
-    desmos = f'<div id="{id}" style="width: 600px; height: 400px; margin: auto"></div>'
+    desmos = f'<div id="{id}" style="height: 400px; margin: auto"></div>'
     desmos += "\n<script>"
 
     desmos += f'\nvar elt = document.getElementById("{id}");'
@@ -26,7 +26,8 @@ def replace(content: str, s: int, e: int, data: dict) -> str:
     desmos += "\n});"
 
     try:
-        desmos += f'\ncalc.setExpression({{ latex: "{data["expr"]}" }});'
+        for expr in data["expr"]:
+            desmos += f'\ncalc.setExpression({json.dumps(expr)});'
     except:
         pass
 
@@ -55,8 +56,15 @@ def add_desmos(content: str):
 
         data = content[s+9:e]
         content = replace(content, s, e+3, json.loads(data))
-    # print(content)
     return content
+
+
+def chapter_walk(chapters: list) -> list:
+    for chapter in chapters:
+        chapter["Chapter"]["content"] = add_desmos(
+            chapter["Chapter"]["content"])
+        chapter_walk(chapter["Chapter"]["sub_items"])
+    return chapters
 
 
 if __name__ == '__main__':
@@ -66,8 +74,16 @@ if __name__ == '__main__':
 
     context, book = json.load(sys.stdin)
 
-    for section in book["sections"]:
-        for chapter in section.values():
-            chapter["content"] = add_desmos(chapter["content"])
+    chapter_walk(book["sections"])
+
+    # book["sections"].append({"Chapter": {
+    #     "name": "Debug",
+    #     "content": json.dumps(book, indent=2),
+    #     "number": [666],
+    #     "sub_items": [],
+    #     "path": "debug.md",
+    #     "source_path": "debug.md",
+    #     "parent_names": [],
+    # }})
 
     print(json.dumps(book))
