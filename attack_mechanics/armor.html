@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Dota Numbers</title>
-        <meta name="robots" content="noindex" />
+        <title>Armor - Dota Numbers</title>
 
 
         <!-- Custom HTML head -->
@@ -14,21 +13,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -39,7 +38,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -87,7 +86,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Attack Mechanics</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="attack_mechanics/attack_speed.html"><strong aria-hidden="true">1.1.</strong> Attack Speed</a></li><li class="chapter-item expanded "><a href="attack_mechanics/armor.html"><strong aria-hidden="true">1.2.</strong> Armor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Hero Mechanics</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="hero_mechanics/gold.html"><strong aria-hidden="true">2.1.</strong> Gold</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Attack Mechanics</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../attack_mechanics/attack_speed.html"><strong aria-hidden="true">1.1.</strong> Attack Speed</a></li><li class="chapter-item expanded "><a href="../attack_mechanics/armor.html" class="active"><strong aria-hidden="true">1.2.</strong> Armor</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Hero Mechanics</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../hero_mechanics/gold.html"><strong aria-hidden="true">2.1.</strong> Gold</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -119,7 +118,7 @@
                     <h1 class="menu-title">Dota Numbers</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -148,31 +147,9 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="attack-speed"><a class="header" href="#attack-speed">Attack Speed</a></h1>
-<p><a href="https://liquipedia.net/dota2/Attack_Speed">https://liquipedia.net/dota2/Attack_Speed</a></p>
-<h2 id="formulas"><a class="header" href="#formulas">Formulas</a></h2>
-<p>\[ T = \frac{1}{S} \]
-\[ S = \frac{T_b}{1 + (\frac{S_i}{100})} \]
-\[ 20 \le \mathit{S_i} \le 700 \]</p>
-<h2 id="graph"><a class="header" href="#graph">Graph</a></h2>
-<h4 id="attack-speed---attacks-per-second"><a class="header" href="#attack-speed---attacks-per-second">Attack Speed -&gt; Attacks Per Second</a></h4>
-<div id="06e14713-5d3c-4cab-a17b-97f214c228b2" style="height: 400px; margin: auto"></div>
-<script>
-var elt = document.getElementById("06e14713-5d3c-4cab-a17b-97f214c228b2");
-var calc = Desmos.GraphingCalculator(elt, {
-expressionsCollapsed: true,
-pasteGraphLink: true,xAxisLabel: "Attack Speed",yAxisLabel: "Attacks Per Second",
-});
-calc.setExpression({"latex": "T = \\frac{1}{S}"});
-calc.setExpression({"latex": "S = \\frac{T_b}{1 + (\\frac{S_i}{100})}", "hidden": true});
-calc.setExpression({"latex": "S_i=\\min(\\max(x, 20), 700)", "hidden": true});
-calc.setExpression({"latex": "T_b=1.7", "sliderBounds": {"min": 0, "max": 2, "step": 0.1}});
-calc.setMathBounds({ left: 0, right: 700, bottom: 0, top: 8 });
-calc.setDefaultState(calc.getState());
-</script>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="armor"><a class="header" href="#armor">Armor</a></h1>
+                        <h1 id="armor"><a class="header" href="#armor">Armor</a></h1>
 <p><a href="https://liquipedia.net/dota2/Armor">https://liquipedia.net/dota2/Armor</a></p>
-<h2 id="formulas-1"><a class="header" href="#formulas-1">Formulas</a></h2>
+<h2 id="formulas"><a class="header" href="#formulas">Formulas</a></h2>
 <p>\[ H_e = \frac{H_c}{D_m} \]
 \[ D_m = 1 - \frac{0.06 A}{1 + 0.06 |A| } \]</p>
 <h2 id="graphs"><a class="header" href="#graphs">Graphs</a></h2>
@@ -201,66 +178,18 @@ calc.setExpression({"latex": "D_m = 1 - \\frac{0.06 * A}{1 + 0.06 * \\abs(A) }",
 calc.setMathBounds({ left: -40, right: 40, bottom: 0, top: 350 });
 calc.setDefaultState(calc.getState());
 </script>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="gold"><a class="header" href="#gold">Gold</a></h1>
-<p><a href="https://liquipedia.net/dota2/Gold">https://liquipedia.net/dota2/Gold</a></p>
-<h2 id="gold-loss"><a class="header" href="#gold-loss">Gold Loss</a></h2>
-<h3 id="formula"><a class="header" href="#formula">Formula</a></h3>
-<p>\[ G = \frac{N}{40} \]</p>
-<h3 id="graph-1"><a class="header" href="#graph-1">Graph</a></h3>
-<h4 id="net-worth---unreliable-gold-lost"><a class="header" href="#net-worth---unreliable-gold-lost">Net Worth -&gt; Unreliable Gold Lost</a></h4>
-<div id="13529d91-e099-412d-bdd0-ffd34648abee" style="height: 400px; margin: auto"></div>
-<script>
-var elt = document.getElementById("13529d91-e099-412d-bdd0-ffd34648abee");
-var calc = Desmos.GraphingCalculator(elt, {
-expressionsCollapsed: true,
-pasteGraphLink: true,xAxisLabel: "Net Worth",yAxisLabel: "Unreliable Gold Lost",
-});
-calc.setExpression({"latex": "G = \\frac{N}{40}"});
-calc.setMathBounds({ left: 0, right: 40000, bottom: 0, top: 1000 });
-calc.setDefaultState(calc.getState());
-</script>
-<h2 id="kill-bounty"><a class="header" href="#kill-bounty">Kill Bounty</a></h2>
-<h3 id="formulas-2"><a class="header" href="#formulas-2">Formulas</a></h3>
-<p>\[ B_s = 5 S^2 + 5 S \]
-\[ B = 125 + 8 L + B_s \]</p>
-<h3 id="graphs-1"><a class="header" href="#graphs-1">Graphs</a></h3>
-<h4 id="kill-streak---streak-bonus"><a class="header" href="#kill-streak---streak-bonus">Kill Streak -&gt; Streak Bonus</a></h4>
-<div id="e5057833-6954-413c-a625-0ac27c7b3121" style="height: 400px; margin: auto"></div>
-<script>
-var elt = document.getElementById("e5057833-6954-413c-a625-0ac27c7b3121");
-var calc = Desmos.GraphingCalculator(elt, {
-expressionsCollapsed: true,
-pasteGraphLink: true,xAxisLabel: "Kill Streak",yAxisLabel: "Streak Bonus",
-});
-calc.setExpression({"latex": "B_s = 5 S^2 + 5 S"});
-calc.setExpression({"latex": "S = \\ceil(\\frac{\\max(x - 2.99, 0)}{x}) * \\min(x, 10)", "hidden": true});
-calc.setExpression({"type": "table", "columns": [{"latex": "x", "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, {"latex": "B_s", "color": "#2d70b3"}]});
-calc.setMathBounds({ left: 0, right: 11, bottom: 0, top: 600 });
-calc.setDefaultState(calc.getState());
-</script>
-<h4 id="killed-hero-level---kill-bounty"><a class="header" href="#killed-hero-level---kill-bounty">Killed Hero Level -&gt; Kill Bounty</a></h4>
-<div id="629efd35-340f-485f-b522-a7bd3838c14e" style="height: 400px; margin: auto"></div>
-<script>
-var elt = document.getElementById("629efd35-340f-485f-b522-a7bd3838c14e");
-var calc = Desmos.GraphingCalculator(elt, {
-expressionsCollapsed: true,
-pasteGraphLink: true,xAxisLabel: "Killed Hero Level",yAxisLabel: "Kill Bounty",
-});
-calc.setExpression({"latex": "B = 125 + 8 L + B_s"});
-calc.setExpression({"latex": "B_s = 5 S^2 + 5 S"});
-calc.setExpression({"latex": "S = \\ceil(\\frac{\\max(S_i - 2.99, 0)}{S_i}) * \\min(S_i, 10)"});
-calc.setExpression({"latex": "L = x", "hidden": true});
-calc.setExpression({"latex": "S_i = 1", "sliderBounds": {"min": 1, "max": 10, "step": 1}});
-calc.setExpression({"type": "table", "columns": [{"latex": "x", "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]}, {"latex": "B", "color": "#2d70b3"}]});
-calc.setMathBounds({ left: 0, right: 34, bottom: 0, top: 1000 });
-calc.setDefaultState(calc.getState());
-</script>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../attack_mechanics/attack_speed.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
+                            <a rel="next" href="../hero_mechanics/gold.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -268,7 +197,13 @@ calc.setDefaultState(calc.getState());
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../attack_mechanics/attack_speed.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
+                    <a rel="next" href="../hero_mechanics/gold.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
@@ -281,23 +216,16 @@ calc.setDefaultState(calc.getState());
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 
-        <script>
-        window.addEventListener('load', function() {
-            MathJax.Hub.Register.StartupHook('End', function() {
-                window.setTimeout(window.print, 100);
-            });
-        });
-        </script>
 
     </div>
     </body>
