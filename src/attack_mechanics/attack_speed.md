@@ -1,3 +1,5 @@
+> This page might be outdated.
+
 # Attack Speed
 
 <https://liquipedia.net/dota2/Attack_Speed>
@@ -31,7 +33,7 @@
       "sliderBounds": { "min": 0, "max": 2, "step": 0.1 }
     }
   ],
-  "bounds": [0, 700, 0, 8],
+  "bounds": [0, 720, 0, 8],
   "xLabel": "Attack Speed",
   "yLabel": "Attacks Per Second"
 }

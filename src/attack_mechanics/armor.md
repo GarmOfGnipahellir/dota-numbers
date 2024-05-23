@@ -1,3 +1,5 @@
+> This page might be outdated.
+
 # Armor
 
 <https://liquipedia.net/dota2/Armor>

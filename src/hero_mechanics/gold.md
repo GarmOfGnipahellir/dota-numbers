@@ -1,3 +1,5 @@
+> This page might be outdated.
+
 # Gold
 
 <https://liquipedia.net/dota2/Gold>
